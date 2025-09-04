@@ -4,14 +4,12 @@ public class Pokemon {
 
     private String tipo;
     private String habilidad;
-    private int numero;
     private String nombre;
 
-    public Pokemon(String tipo, String habilidad, int numero, String nombre) {
+    public Pokemon(String tipo, String habilidad, String nombre) {
 
         this.tipo = tipo;
         this.habilidad = habilidad;
-        this.numero = numero;
         this.nombre = nombre;
     }
 
@@ -37,15 +35,14 @@ public class Pokemon {
 
     }
 
-    public int getNumero() {
+    public String getNombre() {
 
-        return numero;
-
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
+        return nombre;
 
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+
+    }
 }
